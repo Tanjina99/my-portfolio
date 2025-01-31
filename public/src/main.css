@@ -1,0 +1,495 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --main-color: #12141D;
+}
+
+@layer components{
+    ul{
+        @apply list-none;
+    }
+    ul,li{
+        @apply p-0 m-0;
+    }
+    a{
+        @apply no-underline;
+    }
+    html{
+        @apply overflow-x-hidden p-0 m-0;
+    }
+    body{
+        @apply overflow-hidden w-full font-inter text-[18px] leading-[28px] tracking-[0px] break-words font-normal bg-white text-main-color;
+    }
+    svg{
+        @apply fill-current w-[15px] h-[15px] !inline-block;
+    }
+    img.svg{
+        @apply w-[15px] h-[15px];
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-bold leading-[1.2] font-dm text-main-color;
+    }
+    h1{
+        @apply text-[45px];
+    }
+    h2{
+        @apply text-[36px];
+    }
+    h3{
+        @apply text-[30px];
+    }
+    h4{
+        @apply text-[24px];
+    }
+    h5{
+        @apply text-[20px];
+    }
+    h6{
+        @apply text-[16px];
+    }
+
+    /*RESPONSIVE FOR MOBILE DEVICES*/
+
+    /*Larger Screens*/
+
+    body{
+        @apply large:text-[16px]
+    }
+    .container{
+        @apply large:max-w-[1130px] large:py-0 large:px-[30px]
+    }
+    .orido_tm_header{
+        @apply large:py-[20px] large:px-[60px]
+    }
+    .orido_tm_header.animate{
+        @apply large:py-[10px] large:px-[60px]
+    }
+    .orido_tm_header .menu ul li{
+        @apply large:mr-[45px]
+    }
+    .orido_tm_header .logo img{
+        @apply large:max-w-[145px] large:max-h-[80px]
+    }
+    .orido_tm_header .button a{
+        @apply large:px-[30px] large:pt-[9px] large:pb-[10px]
+    }
+    .orido_tm_hero .short{
+        @apply large:mb-[25px]
+    }
+    .orido_tm_hero .short h3{
+        @apply large:text-[65px] large:mb-[7px]
+    }
+    .orido_tm_hero .short .job{
+        @apply large:text-[20px] large:pl-[87px]
+    }
+    .orido_tm_hero .short .job:before{
+        @apply large:w-[70px]
+    }
+    .orido_tm_hero .short h3 .svg{
+        @apply large:w-[38px] large:h-[38px]
+    }
+    .orido_tm_hero .text{
+        @apply large:mb-[45px]
+    }
+    .orido_tm_hero .text p{
+        @apply large:text-[15px]
+    }
+    .orido_tm_boxed_button a{
+        @apply large:px-[30px] large:pt-[15px] large:pb-[16px]
+    }
+    .orido_tm_hero .orido_tm_simple_button{
+        @apply large:mr-[45px]
+    }
+    .orido_tm_down{
+        @apply large:!bottom-[15px] large:!left-[60px]
+    }
+    .orido_tm_hero .orido_tm_follow{
+        @apply large:bottom-[60px]
+    }
+    .orido_tm_follow ul li a{
+        @apply large:w-[50px] large:h-[50px]
+    }
+    .orido_tm_follow ul li{
+        @apply large:mr-[10px]
+    }
+    .orido_tm_follow ul{
+        @apply large:ml-[10px]
+    }
+    .orido_tm_follow span{
+        @apply large:text-[15px]
+    }
+    .orido_tm_hero .avatar img{
+        @apply large:max-h-[530px] large:max-w-[500px]
+    }
+    .orido_tm_hero .video_button img{
+        @apply large:!max-w-[150px] large:!max-h-[150px]
+    }
+    .orido_tm_hero .video_button{
+        @apply large:bottom-[45px] large:right-[-45px]
+    }
+    .orido_tm_about{
+        @apply large:pt-[160px]
+    }
+    .orido_tm_about .left .year{
+        @apply large:text-[330px] large:mt-[-85px]
+    }
+    .orido_tm_about .experience{
+        @apply large:pl-[40px] large:text-[18px] large:mt-[3px]
+    }
+    .orido_tm_about .name{
+        @apply large:text-[55px] large:left-[-10px] large:bottom-[-20px]
+    }
+    .orido_tm_about .left .box{
+        @apply large:pb-[70px]
+    }
+    .orido_tm_about .about_in{
+        @apply large:max-w-[950px]
+    }
+    .orido_tm_about .orido_tm_main_title{
+        @apply large:mb-[25px]
+    }
+    .orido_tm_main_title h3{
+        @apply large:text-[45px]
+    }
+    .orido_tm_main_title h3 span:before{
+        @apply large:w-[65px] large:ml-[10px]
+    }
+    .orido_tm_about .short img{
+        @apply large:max-w-[160px] large:ml-[40px]
+    }
+    .orido_tm_about .right .text{
+        @apply large:mb-[40px]
+    }
+    .orido_tm_informations .skillbox{
+        @apply large:mt-[85px]
+    }
+    .orido_tm_portfolio .prev_button,.orido_tm_portfolio .next_button{
+        @apply large:w-[65px] large:h-[65px] large:mt-[-120px]
+    }
+    .orido_tm_portfolio .prev_button .svg,.orido_tm_portfolio .next_button .svg{
+        @apply large:w-[24px] large:h-[24px]
+    }
+    .orido_tm_portfolio .prev_button{
+        @apply large:left-[-80px]
+    }
+    .orido_tm_portfolio .next_button{
+        @apply large:right-[-80px]
+    }
+    .orido_tm_portfolio .portfolio_list .title{
+        @apply large:text-[28px]
+    }
+    .orido_tm_portfolio .portfolio_list .category{
+        @apply large:text-[18px] large:mb-[7px]
+    }
+    .orido_tm_portfolio .portfolio_list .details{
+        @apply large:mb-[22px]
+    }
+    .orido_tm_testimonials .text p{
+        @apply large:text-[22px] large:leading-[34px]
+    }
+    .orido_tm_testimonials .details .name{
+        @apply large:text-[22px] large:mb-[5px]
+    }
+    .orido_tm_testimonials .details .job{
+        @apply large:text-[17px]
+    }
+    .orido_tm_news .metabox span{
+        @apply large:text-[14px]
+    }
+    .orido_tm_news .metabox ul li{
+        @apply large:mr-[5px]
+    }
+    .orido_tm_news .title a{
+        @apply large:text-[18px]
+    }
+    .orido_tm_news .title{
+        @apply large:mb-[35px]
+    }
+    .orido_tm_contact .text h3{
+        @apply large:text-[48px] large:mb-[18px]
+    }
+    .orido_tm_contact .connect p{
+        @apply large:text-[25px]
+    }
+    .orido_tm_contact .orido_tm_follow ul li a{
+        @apply large:w-[50px] large:h-[50px]
+    }
+    .orido_tm_contact .orido_tm_follow ul li{
+        @apply large:mr-[10px]
+    }
+    .orido_tm_contact .orido_tm_follow ul{
+        @apply large:ml-[10px]
+    }
+    .orido_tm_contact .orido_tm_follow span{
+        @apply large:text-[15px]
+    }
+    .orido_tm_copyright .logo img{
+        @apply large:max-w-[145px] large:max-h-[80px]
+    }
+    .orido_tm_contact .element .svg{
+        @apply large:w-[80%] large:h-[80%]
+    }
+    .orido_tm_contact .element{
+        @apply large:left-[-50px]
+    }
+    .orido_tm_contact .element2{
+        @apply large:right-[40px]
+    }
+    .orido_tm_contact .element2 .svg{
+        @apply large:w-[70%] large:h-[70%]
+    }
+
+    /*Middle Screens*/
+
+    body{
+        @apply middle:text-[15px]
+    }
+    .mouse-cursor{
+        @apply middle:hidden
+    }
+    #preloader{
+        @apply middle:hidden
+    }
+    .container{
+        @apply middle:py-0 middle:px-[20px]
+    }
+    .orido_tm_header{
+        @apply middle:hidden
+    }
+    .orido_tm_mobile_menu{
+        @apply middle:block
+    }
+    .orido_tm_hero .avatar{
+        @apply middle:hidden
+    }
+    .orido_tm_hero .details{
+        @apply middle:pr-0 middle:w-full
+    }
+    .orido_tm_hero .short h3{
+        @apply middle:text-[48px]
+    }
+    .orido_tm_hero .short h3 .svg{
+        @apply middle:w-[25px] middle:h-[25px] middle:left-0
+    }
+    .orido_tm_hero .short .job{
+        @apply middle:text-[16px] middle:pl-[60px]
+    }
+    .orido_tm_hero .short .job:before{
+        @apply middle:w-[43px]
+    }
+    .orido_tm_boxed_button a{
+        @apply middle:px-[25px] middle:pt-[12px] middle:pb-[13px]
+    }
+    .orido_tm_hero .orido_tm_simple_button{
+        @apply middle:ml-[30px]
+    }
+    .orido_tm_simple_button a .svg{
+        @apply middle:w-[20px] middle:h-[20px] middle:ml-0
+    }
+    .orido_tm_hero .text{
+        @apply middle:mb-[35px]
+    }
+    .orido_tm_follow ul li a{
+        @apply middle:w-[40px] middle:h-[40px]
+    }
+    .orido_tm_follow span{
+        @apply middle:text-[14px]
+    }
+    .orido_tm_hero .orido_tm_follow{
+        @apply middle:bottom-[100px]
+    }
+    .orido_tm_down{
+        @apply middle:!bottom-[10px] middle:!left-[20px]
+    }
+    .orido_tm_about .about_in{
+        @apply middle:py-0 middle:px-[20px] middle:flex-col
+    }
+    .orido_tm_about .left{
+        @apply middle:w-full middle:pr-0 middle:mb-[40px]
+    }
+    .orido_tm_about .right{
+        @apply middle:w-full
+    }
+    .orido_tm_about .element{
+        @apply middle:hidden
+    }
+    .orido_tm_main_title h3{
+        @apply middle:text-[35px]
+    }
+    .orido_tm_main_title h3 span:before{
+        @apply middle:w-[45px] middle:bottom-[13px]
+    }
+    .orido_tm_about .left .year{
+        @apply middle:text-[280px] middle:mt-[-75px]
+    }
+    .orido_tm_about .experience{
+        @apply middle:text-[15px] middle:pl-[35px]
+    }
+    .orido_tm_about .name{
+        @apply middle:text-[47px] middle:left-[-12px] middle:bottom-[-16px]
+    }
+    .orido_tm_about .short img{
+        @apply middle:max-w-[115px] middle:ml-[25px]
+    }
+    .orido_tm_informations .informations_inner{
+        @apply middle:flex-col
+    }
+    .orido_tm_informations .left{
+        @apply middle:w-full middle:pr-0 middle:mb-[50px]
+    }
+    .orido_tm_informations .right{
+        @apply middle:w-full middle:top-0
+    }
+    .orido_tm_informations .right .filter .ccc{
+        @apply middle:hidden
+    }
+    .orido_tm_informations .right .filter ul li{
+        @apply middle:mb-[7px]
+    }
+    .orido_tm_informations .right .filter ul li a .svg{
+        @apply middle:ml-0 middle:w-[20px] middle:h-[20px]
+    }
+    .orido_tm_informations .timelinebox{
+        @apply middle:mt-[55px]
+    }
+    .orido_tm_informations .skillbox{
+        @apply middle:mt-[50px]
+    }
+    .orido_tm_service .service_list .list_inner{
+        @apply middle:flex-col middle:items-baseline middle:justify-start
+    }
+    .orido_tm_service .service_list .right .arrow{
+        @apply middle:hidden
+    }
+    .orido_tm_service .service_list .left{
+        @apply middle:w-full middle:mb-[10px]
+    }
+    .orido_tm_service .service_list .right{
+        @apply middle:w-full middle:block
+    }
+    .orido_tm_service .service_list .right .text{
+        @apply middle:pr-0
+    }
+    .orido_tm_service .service_list .title{
+        @apply middle:text-[25px] middle:pl-[10px]
+    }
+    .orido_tm_service .service_list .number{
+        @apply middle:text-[16px]
+    }
+    .orido_tm_portfolio .prev_button, .orido_tm_portfolio .next_button{
+        @apply middle:hidden
+    }
+    .orido_tm_portfolio .portfolio_list .title{
+        @apply middle:text-[25px]
+    }
+    .orido_tm_portfolio .portfolio_list .category{
+        @apply middle:text-[15px]
+    }
+    .orido_tm_testimonials .testimonials_in{
+        @apply middle:flex-col middle:items-baseline
+    }
+    .orido_tm_testimonials img{
+        @apply middle:max-w-[250px] middle:max-h-[250px] middle:mb-[30px]
+    }
+    .orido_tm_testimonials .info{
+        @apply middle:pl-0
+    }
+    .orido_tm_testimonials .text p{
+        @apply middle:text-[18px]
+    }
+    .orido_tm_testimonials .details .name{
+        @apply middle:text-[20px] middle:mb-[2px]
+    }
+    .orido_tm_testimonials .details .job{
+        @apply middle:text-[15px]
+    }
+    .orido_tm_news .news_list > ul{
+        @apply middle:m-0
+    }
+    .orido_tm_news .news_list > ul > li{
+        @apply middle:w-full middle:pl-0
+    }
+    .orido_tm_contact .infobox{
+        @apply middle:flex-col middle:items-baseline middle:justify-start
+    }
+    .orido_tm_contact .infobox .video_button img{
+        @apply middle:max-w-[120px] middle:max-h-[120px]
+    }
+    .orido_tm_contact .infobox .video_button .svg{
+        @apply middle:w-[20px] middle:h-[20px]
+    }
+    .orido_tm_contact .text{
+        @apply middle:p-0 middle:mb-[20px]
+    }
+    .orido_tm_contact .text h3{
+        @apply middle:text-[32px] middle:mb-[10px]
+    }
+    .orido_tm_contact .infobox .video_button{
+        @apply middle:mb-[20px]
+    }
+    .orido_tm_contact .connect{
+        @apply middle:flex-col middle:items-baseline middle:justify-start
+    }
+    .orido_tm_contact .connect .left ul li{
+        @apply middle:mb-[10px] middle:mr-[20px]
+    }
+    .orido_tm_contact .connect p{
+        @apply middle:text-[20px]
+    }
+    .orido_tm_contact .connect .left{
+        @apply middle:mb-[20px]
+    }
+    .orido_tm_copyright .copyright_inner{
+        @apply middle:flex-col
+    }
+    .orido_tm_copyright .logo{
+        @apply middle:mb-[10px]
+    }
+    .orido_tm_copyright .logo img{
+        @apply middle:max-w-[110px]
+    }
+    .orido_tm_contact .element{
+        @apply middle:hidden
+    }
+    .orido_tm_contact .element2{
+        @apply middle:hidden
+    }
+
+    /*Small screens*/
+
+    .orido_tm_informations .skillbox ul li{
+        @apply small:w-1/2
+    }
+    .orido_tm_informations .timelinebox ul{
+        @apply small:ml-0
+    }
+    .orido_tm_informations .timelinebox ul li{
+        @apply small:w-full small:small:pl-0
+    }
+    .orido_tm_counter .counter_list ul li{
+        @apply small:w-1/2
+    }
+    .orido_tm_counter .counter_list h3{
+        @apply small:text-[45px]
+    }
+    .orido_tm_counter .counter_list ul li .list_inner:before{
+        @apply small:w-[45px] small:h-[45px]
+    }
+    .orido_tm_news .news_list > ul > li .list_inner{
+        @apply small:flex-col-reverse small:items-baseline
+    }
+    .orido_tm_news .shape{
+        @apply small:hidden
+    }
+    .orido_tm_news .news_list > ul > li .right{
+        @apply small:w-full small:mb-[30px]
+    }
+    .orido_tm_news .news_list > ul > li .left{
+        @apply small:w-full small:pr-0
+    }
+    .orido_tm_news .news_list > ul > li .list_inner{
+        @apply small:p-[20px]
+    }
+}
