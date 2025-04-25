@@ -38,13 +38,13 @@ const Index = () => {
       <Projects />
       {/* /PORTFOLIO */}
       {/* TESTIMONIALS */}
-      <Feedback />
+      {/* <Feedback /> */}
       {/* /TESTIMONIALS */}
       {/* NEWS */}
-      <Blog />
+      {/* <Blog /> */}
       {/* /NEWS */}
       {/* PARTNERS */}
-      <Partners />
+      {/* <Partners /> */}
       {/* /PARTNERS */}
       {/* CONTACT */}
       <Contact />

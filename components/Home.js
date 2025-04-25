@@ -5,24 +5,26 @@ const Home = ({ dark }) => {
       id="home"
     >
       <div className="container min-h-[100vh]">
-        <div className="content min-h-[100vh] relative flex items-center justify-between">
+        <div className="content min-h-[90vh] relative flex items-center justify-between">
           <div className="details w-1/2 pr-[50px]">
             <div className="short mb-[32px]">
-              <h3 className="text-[80px] font-medium tracking-[-4px] mb-[11px]">
-                Farah Naz{" "}
+              <h3 className="text-[60px] font-medium tracking-[-4px] mb-[11px]">
+                Tanjina Sultana{" "}
                 <img
                   className="svg w-[45px] h-[45px] relative left-[-7px]"
                   src="assets/img/svg/hi.svg"
                   alt
                 />
               </h3>
-              <span className="job inline-block relative text-[24px] pl-[97px]">
-                Frontend Developer and QA Engineer
+              <span className="job inline-block relative text-[24px] pl-[97px] font-bold text-black px-2 rounded ">
+                Frontend Developer
               </span>
             </div>
             <div className="text mb-[70px]">
               <p className="text-[16px] text-[#5A5A5A] leading-[26px] max-w-[400px]">
-              I'm a passionate and detail-oriented developer based in New York, dedicated to building seamless user experiences and ensuring high-quality software through rigorous testing.
+                I'm a passionate and detail-oriented developer based in Florida,
+                dedicated to building seamless user experiences and ensuring
+                high-quality software through rigorous testing.
               </p>
             </div>
             <div className="flex items-center buttons">
@@ -41,13 +43,13 @@ const Home = ({ dark }) => {
             </div>
           </div>
         </div>
-        <div className="orido_tm_follow absolute bottom-[120px] flex items-center">
+        <div className="orido_tm_follow absolute bottom-[170px] flex items-center">
           <span className="text-[16px] font-medium">Follow me:</span>
           <ul className="flex items-center relative top-[5px] ml-[20px]">
             <li className="mr-[20px]">
               <a
-                className="inline-block relative w-[100px] h-[100px] bg-[#F6F6F6] rounded-full transition-all duration-300"
-                href="https://linkedin.com/in/farahnaz1292"
+                className="inline-block relative w-[60px] h-[60px] bg-gradient-to-r from-[#8380F1] to-[#E6E6FA] rounded-full transition-all duration-300"
+                href="https://www.linkedin.com/in/tanjina-sultana-2719a7283/"
               >
                 <img
                   className="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
@@ -57,9 +59,9 @@ const Home = ({ dark }) => {
               </a>
             </li>
             <li className="mr-[20px]">
-              <a 
-                className="inline-block relative w-[100px] h-[100px] bg-[#F6F6F6] rounded-full transition-all duration-300"
-                href="https://github.com/FarahNaz1292"
+              <a
+                className="inline-block relative w-[60px] h-[60px] bg-gradient-to-r from-[#8380F1] to-[#E6E6FA] rounded-full transition-all duration-300"
+                href="https://github.com/Tanjina99"
               >
                 <img
                   className="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
@@ -68,21 +70,10 @@ const Home = ({ dark }) => {
                 />
               </a>
             </li>
-            <li>
-              <a
-                className="inline-block relative w-[100px] h-[100px] bg-[#F6F6F6] rounded-full transition-all duration-300"
-                href="https://instagram.com/f_a_r_a_hnaz?igsh=czRlNGY5MWU5b3E0&utm_source=qr"
-              >
-                <img
-                  className="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
-                  src="assets/img/svg/social/instagarm.svg"
-                  alt
-                />
-              </a>
-            </li>
           </ul>
         </div>
       </div>
+
       <div className="orido_tm_down absolute left-[150px] bottom-[45px]">
         <a className="anchor" href="#about">
           <img
@@ -94,26 +85,42 @@ const Home = ({ dark }) => {
           />
         </a>
       </div>
-      <div className="avatar absolute w-1/2 right-0 bottom-[-8px]">
-        <div className="relative inline-block img">
-          <img
-            className="max-w-[700px] max-h-[760px]"
-            src="assets/img/hero/farah_naz_pic.png"
-            alt
-          />
-          {/* <div className="video_button">
-            <a
-              className="popup-youtube"
-              href="https://www.youtube.com/watch?v=7e90gBu4pas"
-            >
-              <img
-                className="anim_circle"
-                src="assets/img/hero/welcome.png"
-                alt
-              />
-              <img className="svg" src="assets/img/svg/play.svg" alt />
-            </a>
-          </div> */}
+      <div className="avatar absolute w-1/2 right-0 bottom-[-8px] flex justify-center items-center">
+        <div className="relative inline-block img top-[-170px]">
+          {" "}
+          {/* Adjusted top position */}
+          {/* Background glow effects */}
+          <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-indigo-500/30 rounded-full blur-xl"></div>
+          <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple-500/30 rounded-full blur-xl"></div>
+          {/* Decorative outer ring with gradient */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#8380F1] to-[#E6E6FA] rounded-full p-1 rotate-45 animate-spin-slow"></div>
+          {/* Main image container */}
+          <div className="relative rounded-full overflow-hidden border-8 border-white shadow-xl aspect-square flex justify-center items-center">
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-transparent z-10"></div>
+
+            {/* Diagonal lines overlay */}
+            <div
+              className="absolute inset-0 bg-white/10 z-20"
+              style={{
+                backgroundImage:
+                  "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(131, 128, 241, 0.1) 10px, rgba(131, 128, 241, 0.1) 20px)",
+              }}
+            ></div>
+
+            {/* Image */}
+            <img
+              className="w-[500px] h-[500px] object-cover object-center"
+              src="assets/img/hero/jina_pic.jpg"
+              alt="Tanjina Sultana"
+            />
+          </div>
+          {/* Decorative floating elements */}
+          <div className="absolute -right-10 top-1/4 w-16 h-16 bg-gradient-to-r from-[#8380F1] to-[#E6E6FA] rounded-full shadow-lg animate-float"></div>
+          <div className="absolute -left-10 bottom-1/4 w-12 h-12 bg-gradient-to-r from-[#E6E6FA] to-[#8380F1] rounded-full shadow-lg animate-float-delayed"></div>
+          {/* Small decorative dots */}
+          <div className="absolute -top-4 right-1/3 w-4 h-4 bg-indigo-500 rounded-full animate-pulse"></div>
+          <div className="absolute -bottom-4 left-1/3 w-4 h-4 bg-purple-500 rounded-full animate-pulse"></div>
         </div>
       </div>
     </div>

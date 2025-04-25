@@ -2,9 +2,9 @@ import OridoCounter from "./OridoCounter";
 
 const counts = [
   { name: "Projects Completed", value: 35 },
-  { name: "Years of Experience", value: 4 },
-  { name: "Bugs Identified & Fixed", value: 500 },
-  { name: "Test Cases Executed", value: 1200 },
+  { name: "Years of Experience", value: 2 },
+  { name: "Bugs Identified & Fixed", value: 200 },
+  { name: "Test Cases Executed", value: 12 },
 ];
 const Counter = () => {
   return (

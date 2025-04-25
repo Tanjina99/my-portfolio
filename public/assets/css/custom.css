@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   width: 64px;
   height: 64px;
-  background-color: #ffc448;
+  background-color: #e6e6fa;
   border-radius: 100%;
   left: 50%;
   transform: translateX(-50%);

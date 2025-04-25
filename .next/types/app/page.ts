@@ -1,4 +1,4 @@
-// File: /Users/shohaibhossain/Downloads/orido-tailwind-css-personal-portfolio-react-next-2024-03-13-03-07-17-utc/orido/app/page.js
+// File: C:\Users\tanji\Desktop\My-Portfolip\client-portfolio-site\app\page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
