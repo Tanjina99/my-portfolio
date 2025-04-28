@@ -46,7 +46,7 @@ const Header = ({ dark }) => {
           <span className="ccc" />
         </div>
         <div className="orido_tm_boxed_button">
-          <a href="assets/img/cv/FarahNaz.docx" download>
+          <a href="assets/img/cv/My_resume.pdf" download>
             <p className="flex">
               My Resume{" "}
               <img className="svg" src="assets/img/svg/paper.svg" alt />

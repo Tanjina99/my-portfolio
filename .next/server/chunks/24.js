@@ -1,1 +1,0 @@
-"use strict";exports.id=24,exports.ids=[24],exports.modules={2024:(e,t,o)=>{o.r(t),o.d(t,{$$typeof:()=>l,__esModule:()=>i,default:()=>d});var s=o(5153);let r=(0,s.createProxy)(String.raw`C:\Users\tanji\Desktop\My-Portfolip\client-portfolio-site\components\Projects.js`),{__esModule:i,$$typeof:l}=r,p=r.default,d=p}};
