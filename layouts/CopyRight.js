@@ -11,7 +11,7 @@ const CopyRight = () => {
                 href="https://themeforest.net/user/codeefly"
                 target="_blank"
               >
-                Codeefly.
+                Tanjina Sultana.
               </a>{" "}
               All Rights Reserved
             </p>
